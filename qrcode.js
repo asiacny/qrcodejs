@@ -395,7 +395,7 @@ var QRCode;
 					_oContext.strokeStyle = bIsDark ? _htOption.colorDark : _htOption.colorLight;
 					_oContext.lineWidth = 1;
 					_oContext.fillStyle = bIsDark ? _htOption.colorDark : _htOption.colorLight;
-					_oContext.fillRect(nLeft+ _htOption.border, nTop+ _htOption.border, nWidth, nHeight);
+					_oContext.fillRect(nLeft + _htOption.border, nTop + _htOption.border, nWidth, nHeight);
 
 					// 안티 앨리어싱 방지 처리
 					_oContext.strokeRect(
@@ -407,7 +407,7 @@ var QRCode;
 
 					_oContext.strokeRect(
 						Math.ceil(nLeft + _htOption.border) - 0.5,
-						Math.ceil(nTop+ _htOption.border) - 0.5,
+						Math.ceil(nTop + _htOption.border) - 0.5,
 						nRoundedWidth,
 						nRoundedHeight
 					);
@@ -474,7 +474,7 @@ var QRCode;
 		var nType = 1;
 		var length = _getUTF8Length(sText);
 
-		for (var i = 0, len = QRCodeLimitLength.length; i <= len; i++) {
+		for (var i = 0, len = QRCodeLimitLength.length; i < len; i++) {
 			var nLimit = 0;
 
 			switch (nCorrectLevel) {
